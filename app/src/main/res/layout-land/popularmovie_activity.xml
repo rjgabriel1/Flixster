@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout>
+    <data>
+        <variable name="movie" type="com.example.flixster.models.Movie"/>
+    </data>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/containerpop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:transitionName="fade">
+
+        <ImageView
+            android:id="@+id/popMovie"
+            android:layout_width="match_parent"
+            android:layout_height="370dp"
+            android:layout_margin="10dp"
+            android:contentDescription="TODO"
+            tools:srcCompat="@tools:sample/avatars"
+            app:morePop="@{movie.backdropPath}"/>
+
+        <ImageView
+            android:id="@+id/playicon"
+            android:layout_width="94dp"
+            android:layout_height="88dp"
+            android:layout_centerInParent="true"
+            app:srcCompat="@drawable/ic_action_name"
+            tools:ignore="ImageContrastCheck"
+
+
+
+            />
+    </RelativeLayout>
+
+</layout>
